@@ -179,6 +179,15 @@
     border: none;
     display: flex;
   }
+
+  .card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 @layer header {
@@ -300,5 +309,43 @@
   .services {
     padding: clamp(2rem, 1.1601rem + 3.5834vw, 4rem) 0;
     background-color: var(--background-color-light);
+  }
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(0rem, 2.8399rem + -3.5834vw, 2rem);
+
+    .card:nth-child(even) {
+      background-color: var(--accent-color);
+    }
+
+    .card:nth-child(odd) {
+      background-color: var(--background-color-dark);
+      color: var(--text-color-light);
+    }
+
+    .service-details-list {
+      list-style-type: none;
+      text-align: start;
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .card {
+      min-height: 24rem;
+    }
+
+    .card:hover .service-details-list {
+      display: flex;
+    }
+  }
+
+  @media only screen and (min-width: 48rem) {
+    .service-cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
