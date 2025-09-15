@@ -146,7 +146,7 @@
 }
 
 @layer utilities {
-  #app {
+  .container {
     max-width: 1280px;
     margin: 0 auto;
     width: 90%;
@@ -154,21 +154,31 @@
   }
 
   .button {
+    font-weight: 700;
     color: var(--text-color-light);
     text-decoration: none;
     padding: 1em 1.5em;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
   }
 
   .button-outline {
     color: var(--primary-color);
     background-color: transparent;
-    border: 1px solid var(--primary-color);
   }
 }
 
 @layer header {
+  header {
+    background: var(--accent-color);
+    color: var(--text-color-light);
+  }
+
+  h1 {
+    color: var(--primary-color);
+  }
+
   .main-nav {
     padding: clamp(1rem, 0.5801rem + 1.7917vw, 2rem) 0;
     display: flex;
@@ -208,6 +218,12 @@
   @media only screen and (min-width: 48rem) {
     .hero-buttons {
       flex-direction: row;
+    }
+
+    .hero,
+    .hero-text {
+      align-items: flex-start;
+      text-align: start;
     }
   }
 }
