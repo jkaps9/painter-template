@@ -95,6 +95,16 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* CSS HSL */
+    --persian-indigo: hsla(270, 100%, 20%, 1);
+    --bright-pink-crayola: hsla(354, 100%, 71%, 1);
+    --baby-powder: hsla(30, 100%, 99%, 1);
+    --celeste: hsla(175, 63%, 81%, 1);
+    --eggplant: hsla(327, 24%, 35%, 1);
+
+    --primary-color: var(--persian-indigo);
+    --accent-color: var(--bright-pink-crayola);
   }
 
   body {
@@ -124,6 +134,13 @@
     width: 90%;
     text-align: center;
   }
+
+  .button {
+    padding: 1em 2em;
+  }
+
+  .button-outline {
+  }
 }
 
 @layer header {
@@ -145,5 +162,7 @@
     list-style-type: none;
     display: flex;
     gap: 2rem;
+    margin-left: auto;
+    margin-right: 3rem;
   }
 }
