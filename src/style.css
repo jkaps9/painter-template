@@ -161,6 +161,12 @@
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     border: 2px solid var(--primary-color);
+
+    &:hover {
+      background-color: var(--background-color-light);
+      border-color: var(--background-color-dark);
+      color: var(--text-color-dark);
+    }
   }
 
   .button-outline {
