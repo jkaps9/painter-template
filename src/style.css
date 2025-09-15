@@ -312,6 +312,7 @@
   }
 
   .service-cards {
+    margin-top: clamp(1.5rem, 1.1851rem + 1.3438vw, 2.25rem);
     display: grid;
     grid-template-columns: 1fr;
     gap: clamp(0rem, 2.8399rem + -3.5834vw, 2rem);
