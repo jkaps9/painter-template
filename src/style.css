@@ -5,7 +5,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    src: url("../src/assets/fonts/montserrat-v31-latin-regular.woff2")
+    src: url("src/assets/fonts/montserrat-v31-latin-regular.woff2")
       format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-500 - latin */
@@ -14,8 +14,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
-    src: url("../src/assets/fonts/montserrat-v31-latin-500.woff2")
-      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/montserrat-v31-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-600 - latin */
   @font-face {
@@ -23,8 +22,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    src: url("../src/assets/fonts/montserrat-v31-latin-600.woff2")
-      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/montserrat-v31-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-700 - latin */
   @font-face {
@@ -32,8 +30,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    src: url("../src/assets/fonts/montserrat-v31-latin-700.woff2")
-      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/montserrat-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-800 - latin */
   @font-face {
@@ -41,8 +38,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 800;
-    src: url("../src/assets/fonts/montserrat-v31-latin-800.woff2")
-      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/montserrat-v31-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-900 - latin */
   @font-face {
@@ -50,8 +46,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 900;
-    src: url("../src/assets/fonts/montserrat-v31-latin-900.woff2")
-      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/montserrat-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
   /* lato-regular - latin */
@@ -60,7 +55,7 @@
     font-family: "Lato";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* lato-700 - latin */
   @font-face {
@@ -68,7 +63,7 @@
     font-family: "Lato";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* lato-900 - latin */
   @font-face {
@@ -76,68 +71,71 @@
     font-family: "Lato";
     font-style: normal;
     font-weight: 900;
-    src: url("../fonts/lato-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("src/assets/fonts/lato-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 }
 
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 }
 
-:root {
-  font-family: "Lato", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer basic-styling {
+  :root {
+    font-family: "Lato", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-}
-
-img {
-  max-width: 100%;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 90%;
-  text-align: center;
+@layer utilities {
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
 }
 
 @layer header {
-  header {
-    padding: 1rem 0;
-  }
-
   .main-nav {
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .logo {
-    max-width: 33%;
+    max-width: 25%;
     img {
       height: auto;
     }
