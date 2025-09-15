@@ -335,7 +335,6 @@
     }
 
     .card {
-      min-height: 24rem;
       justify-content: start;
     }
   }
