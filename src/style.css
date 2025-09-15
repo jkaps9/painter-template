@@ -137,7 +137,7 @@
   }
 
   h2 {
-    font-size: clamp(1.75rem, 1.54rem + 0.8959vw, 2.25rem);
+    font-size: clamp(1.5rem, 1.29rem + 0.8959vw, 2rem);
   }
 
   img {
@@ -170,7 +170,7 @@
 
 @layer header {
   .main-nav {
-    padding: 1rem 0;
+    padding: clamp(1rem, 0.5801rem + 1.7917vw, 2rem) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,6 +198,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  .hero {
+    padding: clamp(2rem, -0.0997rem + 8.9586vw, 7rem) 0;
   }
 
   @media only screen and (min-width: 48rem) {

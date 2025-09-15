@@ -11,7 +11,17 @@
       <header>
         <nav class="main-nav">
           <div class="logo">
-            <img src="./src/assets/images/logo-lg.png" alt="company logo" />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./src/assets/images/logo-lg.png"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./src/assets/images/logo-sm.png"
+              />
+              <img src="./src/assets/images/logo-sm.png" alt="Company Logo" />
+            </picture>
           </div>
           <ul class="nav-list">
             <li class="nav-item dropdown">Services</li>
