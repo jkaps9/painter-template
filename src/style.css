@@ -119,6 +119,7 @@
     min-height: 100vh;
     color: var(--text-color-dark);
     background-color: var(--background-color-light);
+    font-size: 1rem;
   }
 
   h1,
@@ -129,6 +130,14 @@
   h6 {
     font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 700;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 1.5801rem + 1.7917vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 1.54rem + 0.8959vw, 2.25rem);
   }
 
   img {
