@@ -327,8 +327,8 @@
 
     .service-details-list {
       list-style-type: none;
+      display: flex;
       text-align: start;
-      display: none;
       flex-direction: column;
       gap: 0.5rem;
       font-size: 1rem;
@@ -336,10 +336,7 @@
 
     .card {
       min-height: 24rem;
-    }
-
-    .card:hover .service-details-list {
-      display: flex;
+      justify-content: start;
     }
   }
 
