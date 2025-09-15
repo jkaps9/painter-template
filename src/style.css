@@ -295,3 +295,10 @@
     }
   }
 }
+
+@layer main {
+  .services {
+    padding: clamp(2rem, 1.1601rem + 3.5834vw, 4rem) 0;
+    background-color: var(--background-color-light);
+  }
+}
